@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "578589479175",
+    "firebase_url": "https://fir-app-4b887.firebaseio.com",
+    "project_id": "fir-app-4b887",
+    "storage_bucket": "fir-app-4b887.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578589479175:android:3164cd7415610931",
+        "android_client_info": {
+          "package_name": "pachacama.proyecto.firebaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578589479175-jge3qe8m6c2o0jp2d29t4uulbkrapts9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pachacama.proyecto.firebaseapp",
+            "certificate_hash": "5a67bfc4c6464fca94186e9f479944139fd95728"
+          }
+        },
+        {
+          "client_id": "578589479175-4khgvubulapfl751llka12celp4i6gk2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3yIy_G5RKmJ4KBz0x9brL3zSyiiEKGPg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578589479175-4khgvubulapfl751llka12celp4i6gk2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
