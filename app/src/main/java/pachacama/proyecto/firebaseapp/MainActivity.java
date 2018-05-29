@@ -11,6 +11,8 @@ import com.facebook.login.LoginManager;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Log.e(TAG, "test");
 
         // Obtain the FirebaseAnalytics instance.
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
@@ -35,6 +39,14 @@ public class MainActivity extends AppCompatActivity {
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         Log.d(TAG, "user: " + user);
+
+        // Obtenemos el refreshedToken (instanceid)
+        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+        Log.e(TAG, "Refreshed token: " + refreshedToken);
+
+        // Nos suscribimos al tópico 'ALL'
+        FirebaseMessaging.getInstance().subscribeToTopic("ALL");
+
     }
 
     @Override
